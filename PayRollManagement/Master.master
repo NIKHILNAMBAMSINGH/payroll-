@@ -1,0 +1,85 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Master.master.cs" Inherits="Master" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>Payroll Management System</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 90%;
+            position: relative;
+        }
+        header {
+            background-color: #8dc6ff;
+            padding: 5px;
+            color: #22313f;
+            text-align: center;
+            border-radius: 10px;
+        }
+        .logo {
+            float: left;
+            margin-right: 20px;
+        }
+        h1 {
+            display: inline-block;
+            vertical-align: middle;
+        }
+        footer {
+            background-color: #3498db;
+            padding: 10px;
+            text-align: center;
+            position: fixed; 
+            bottom: 0;
+            padding-top:0;
+            margin:0;
+            width:99%;
+            height:25px;
+            border-radius:20px;    
+            
+            
+            
+        }
+        footer p {
+            
+            color: white;
+        }
+        .content {
+            margin-bottom: 50px;
+        }
+        
+
+    </style>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="content">
+            <header>
+                <div class="logo">
+                    <img src="images/payroll.png" style="max-height:80px; height: 78px; width: 86px;" />
+                </div>
+                <h1>PAYROLL MANAGEMENT SYSTEM</h1>
+            </header>
+            <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+                <p>
+                    <br />
+                </p>
+            </asp:ContentPlaceHolder>
+        </div >
+       
+        <footer>
+
+            <p>&copy;
+                <script>document.write(new Date().getFullYear())</script>
+                - Payroll Management System</p>
+            
+        </footer>
+    </form>
+  
+     
+</body>
+</html>
