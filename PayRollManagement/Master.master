@@ -9,7 +9,8 @@
         body {
             margin: 0;
             padding: 0;
-            height: 90%;
+            width: 2014px; /* Set the width to 2014px */
+            height: 740px; /* Set the height to 740px */
             position: relative;
         }
         header {
@@ -38,19 +39,13 @@
             width:99%;
             height:25px;
             border-radius:20px;    
-            
-            
-            
         }
-        footer p {
-            
+        footer p {   
             color: white;
         }
         .content {
             margin-bottom: 50px;
         }
-        
-
     </style>
     <asp:ContentPlaceHolder id="head" runat="server">
     </asp:ContentPlaceHolder>
@@ -72,14 +67,10 @@
         </div >
        
         <footer>
-
             <p>&copy;
                 <script>document.write(new Date().getFullYear())</script>
                 - Payroll Management System</p>
-            
         </footer>
     </form>
-  
-     
 </body>
 </html>
