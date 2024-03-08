@@ -1,0 +1,62 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="MasterPage2.master.cs" Inherits="MasterPage2" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+    <style type="text/css">
+        .auto-style4 {
+            width: 148px;
+        height: 335px;
+    }
+        .auto-style5 {
+            width: 167px;
+           
+        }
+        .auto-style6 {
+            width: 612px;
+        height: 335px;
+    }
+        .auto-style2 {
+            margin-bottom:50px;
+            position:fixed;
+        }
+    </style>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+    <table class="auto-style2">
+        <tr>
+            <td class="auto-style4" style="vertical-align:top">
+                <table class="auto-style2" style="width: 116%">
+                    <tr>
+                        <td class="auto-style5">
+                            <asp:HyperLink ID="AdminDepartmentSectionLink" runat="server" NavigateUrl="~/adminDepartment.aspx">Department Section</asp:HyperLink>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style5">
+                            <asp:HyperLink ID="AdminEmployeeSectionLink" runat="server" NavigateUrl="~/adminEmployee.aspx">Employee Section</asp:HyperLink>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style5">
+                            <asp:HyperLink ID="HyperLink3" runat="server">HyperLink</asp:HyperLink>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style5">
+                            <asp:HyperLink ID="HyperLink4" runat="server">HyperLink</asp:HyperLink>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style5">
+                            <asp:HyperLink ID="HyperLink5" runat="server">HyperLink</asp:HyperLink>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td style="vertical-align:top" class="auto-style6">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                </asp:ContentPlaceHolder>
+            </td>
+        </tr>
+    </table>
+</asp:Content>
+
